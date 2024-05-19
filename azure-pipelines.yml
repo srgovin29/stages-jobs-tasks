@@ -17,6 +17,7 @@ stages:
       displayName: unit tests frontend
 
   - job: BuildBackendApp
+    dependsOn:[]
     displayName: Build Backend App
     steps:
     - script: echo building backend app
