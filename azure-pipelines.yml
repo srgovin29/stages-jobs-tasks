@@ -5,6 +5,7 @@ pool:
   name: Default 
   #vmImage: ubuntu-latest
 
+# Building Stages
 stages:
 - stage: BuildApp
   displayName: Build Apps
@@ -16,3 +17,5 @@ stages:
       displayName: build frontend app
     - script: echo running unit tests for frontend app
       displayName: unit test frontend
+
+  
