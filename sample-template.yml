@@ -1,0 +1,4 @@
+stages:
+
+- stage: ${{parameters.environment}}
+  displayName: Job for ${{parameters.environment}} - coming from Param
