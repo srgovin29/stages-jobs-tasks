@@ -1,20 +1,17 @@
 trigger:
 - main
 
-pool: 
+pool:
   vmImage: ubuntu-latest
 
 stages:
 - stage: BuildApp
   displayName: Build Apps
-  
   jobs:
-  - job: BuildFrontEndApp
+  - job: BuildFrontendApp
     displayName: Build Frontend App
-    
     steps:
     - script: echo building frontend app
       displayName: build frontend app
-    
-    - script: each running unit tests for frontend app
-      displayName: unit test frontend
+    - script: echo running unit tests for frontend app
+      displayName: unit tests frontend
