@@ -13,3 +13,6 @@ stages:
 - template: sample-template.yml
   parameters:
     environment: ${{ variables.backendEnv }}
+    jobs:
+    - job: BuildFrontendApp
+      displayName: Build Frontend App
