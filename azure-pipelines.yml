@@ -12,7 +12,7 @@ stages:
   - job: BuildFrontEndApp
     displayName: Build Frontend App
     
-    Steps:
+    steps:
     - script: echo building frontend app
       displayName: build frontend app
     
